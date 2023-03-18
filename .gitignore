@@ -102,3 +102,13 @@ dist
 
 # TernJS port file
 .tern-port
+
+
+# parcel artidfacts
+
+.cache/
+.parcel-cache/
+.parcel-optimizer-cache/
+.parcel-transform-cache/
+dist/
+build/

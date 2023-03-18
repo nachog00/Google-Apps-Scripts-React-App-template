@@ -6,7 +6,9 @@
     "setup": "npm install --save-dev",
     "start": "parcel src/index.html --host localhost --port 3000 ",
     "build": "node cleanup.js && parcel build src/index.html --dist-dir build --no-source-maps && html-inline -i build/index.html -o app/client/index.html --no-inline-js-attr",
-    "cstart": "clasp push -w"
+    "cstart": "clasp push -w",
+    "cbuild": "npm run build && clasp push -w",
+    "cdeploy": "npm run cbuild && clasp deploy -i 1 -d \"Deployed from npm script\""
   },
   "repository": {
     "type": "git",
@@ -28,8 +30,7 @@
     "react-router-dom": "^6.9.0"
   },
   "devDependencies": {
-    "html-inline": "^1.2.0",
-    "process": "^0.11.10"
+    "html-inline": "^1.2.0"
   },
   "author": "NacoGeo",
   "license": "ISC",
