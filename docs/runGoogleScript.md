@@ -29,6 +29,8 @@ Calls a Google Apps Script function or a local mock function, depending on the e
 
 `runGoogleScript` allows you to use async/await, making it easier to work with asynchronous code compared to the classical `google.script.run` method.
 
+> please note that this examples are for plain Javascript call of the function, for an "in component" call, you should use a `useEffect` hook to avoid conflict between an async call and react.
+
 ```javascript
 import { runGoogleScript } from './helper';
 
