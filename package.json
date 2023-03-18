@@ -1,0 +1,40 @@
+{
+  "name": "gas_react_app_template",
+  "version": "1.0.0",
+  "description": "This is a template dist for a quick deploy react app with apps scripts minded deployment.",
+  "scripts": {
+    "setup": "npm install --save-dev",
+    "start": "parcel src/index.html --host localhost --port 3000 ",
+    "build": "node cleanup.js && parcel build src/index.html --dist-dir build --no-source-maps && html-inline -i build/index.html -o app/client/index.html --no-inline-js-attr",
+    "cstart": "clasp push -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nachog00/Google-Apps-Scripts-React-App-template.git"
+  },
+  "keywords": [
+    "Google",
+    "Apps",
+    "SCripts",
+    "React",
+    "App",
+    "template"
+  ],
+  "dependencies": {
+    "parcel": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.8.0",
+    "react-router-dom": "^6.9.0"
+  },
+  "devDependencies": {
+    "html-inline": "^1.2.0",
+    "process": "^0.11.10"
+  },
+  "author": "NacoGeo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nachog00/Google-Apps-Scripts-React-App-template/issues"
+  },
+  "homepage": "https://github.com/nachog00/Google-Apps-Scripts-React-App-template#readme"
+}
