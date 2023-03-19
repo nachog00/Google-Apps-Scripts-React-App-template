@@ -1,8 +1,8 @@
 // import the react library
 import React from "react";
 
-// // Import the CSS file/s
-// import './style/index.css'
+// Import the CSS file/s
+import './style/index.css'
 
 // import the tester component !! this is just for testing, you can remove this later
 import TestRunGoogleScript from './components/utils/TestRunGoogleScript';
